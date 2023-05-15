@@ -1,0 +1,21 @@
+<div class="content">
+    <div>
+        <mat-card class="example-card">
+            <img mat-card-image [src]="profileMock[id!].image" alt="Photo">
+            <div class="profile-info">
+                <mat-card-title>{{profileMock[id!].name}}</mat-card-title>
+                <mat-card-content>
+                    <p>{{profileMock[id!].age}} Years, {{profileMock[id!].height}},
+                        {{profileMock[id!].caste}}, {{profileMock[id!].education}},
+                        {{profileMock[id!].work}},
+                        {{profileMock[id!].address.place}}, {{profileMock[id!].address.state}},
+                        {{profileMock[id!].address.nationality}}</p>
+                </mat-card-content>
+            </div>
+            <mat-card-actions>
+                <button mat-button class="button-space" (click)="filter(id!,'shortlist')">YES</button>
+                <button mat-button (click)="filter(id!, 'reject')">NO</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+p {
+    font-family: Lato;
+}
+
+.example-card {
+    max-width: 300px;
+    margin: 4px;
+    background-color: white;
+    height: 400px;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button-space {
+    margin-right: 16px;
+}
+
+.profile-info {
+    height: 120px;
+}
