@@ -14,11 +14,8 @@ p {
 }
 
 .content {
-    position: absolute;
     display: flex;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 160px;
 }
 
 .button-space {

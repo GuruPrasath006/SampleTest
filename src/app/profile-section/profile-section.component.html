@@ -1,7 +1,8 @@
 <div class="content">
     <div>
-        <mat-card class="example-card">
-            <img mat-card-image [src]="profileMock[id!].image" alt="Photo">
+        <mat-card class="example-card" (touchstart)="swipe($event, 'start', id!)" (touchend)="swipe($event, 'end', id!)">
+            <img mat-card-image [src]=" profileMock[id!].image" alt="Photo"
+            >
             <div class="profile-info">
                 <mat-card-title>{{profileMock[id!].name}}</mat-card-title>
                 <mat-card-content>
